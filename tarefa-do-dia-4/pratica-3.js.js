@@ -101,16 +101,36 @@ let receita = [
     {'valor': 809, 'gorjeta': 80.9}
 
 ]
-//Problema 1: Qual o valor total de vendas sem gorjeta?
-//COLOQUE SUA SOLUÇÃO AQUI
+//problema 1 
 let total = 0;
 for (let item of receita){
   total = total + item.valor
    
 }
 console.log('total final:',total)
-//Problema 2: Qual o valor total de vendas incluindo a gorjeta?
-//COLOQUE SUA SOLUÇÃO AQUI
 
-//Problema 3: Quantas vendas foram abaixo de 50 reais?
-//COLOQUE SUA SOLUÇÃO AQUI
+//Problema 2
+
+let totalGorjetas = 0;
+
+for (let item of receita){
+   totalGorjetas = totalGorjetas + item.gorjeta
+}
+
+console.log('total gorjetas:', totalGorjetas)
+
+//Problema 3
+
+let vendasabaixo50 = 0
+for (let item of receita){
+
+    if (item.valor < 50){
+        
+    vendasabaixo50 = vendasabaixo50 + 1
+    }
+}
+
+console.log('vendas abaixo de 50:', vendasabaixo50)
+
+
+
