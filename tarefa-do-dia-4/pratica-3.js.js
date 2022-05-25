@@ -108,7 +108,7 @@ for (let item of receita){
   total = total + item.valor
    
 }
-console.log(console.log('total final:',total))
+console.log('total final:',total)
 //Problema 2: Qual o valor total de vendas incluindo a gorjeta?
 //COLOQUE SUA SOLUÇÃO AQUI
 
